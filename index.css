@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  background-image: url(./assets/default-bg.png);
+  background-size: cover;
+  transition: 0.5s ease-out;
+}
+
+.app.warm {
+  background-image: url(./assets/warm-bg.jpg);
+}
+
+.app.cold {
+  background-image: url(./assets/cold-bg.png);
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.7)
+  );
+  padding: 30px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 80px;
+}
+
+.search-box .input-box {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  background-color: rgba(240, 235, 235, 0.4);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  color: #343434;
+  font-size: 22px;
+  transition: 0.5s ease;
+}
+
+.search-box .input-box:focus {
+  background-color: rgba(240, 235, 235, 0.8);
+}
+
+.location-container .location {
+  color: azure;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 4px 4px rgba(70, 70, 80, 0.4);
+}
+
+.location-container .date {
+  color: azure;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 4px 4px rgba(122, 122, 128, 0.4);
+}
+
+.weather-container {
+  text-align: center;
+}
+
+.weather-container .temperature {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(144, 167, 134, 0.4);
+  border-radius: 18px;
+  padding: 15px 25px;
+  color: cornsilk;
+  font-size: 100px;
+  font-weight: 790;
+  text-shadow: 3px 6px rgba(70, 70, 80, 0.4);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.weather-container .weather {
+  color: cornsilk;
+  font-size: 38px;
+  font-weight: 650;
+  text-shadow: 3px 3px rgba(70, 70, 80, 0.4);
+}
